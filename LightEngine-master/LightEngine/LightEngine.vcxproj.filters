@@ -25,10 +25,13 @@
     <ClCompile Include="Scene.cpp">
       <Filter>Engine</Filter>
     </ClCompile>
-    <ClCompile Include="DummyEntity.cpp">
+    <ClCompile Include="Ship.cpp">
       <Filter>Sample</Filter>
     </ClCompile>
     <ClCompile Include="SampleScene.cpp">
+      <Filter>Sample</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
       <Filter>Sample</Filter>
     </ClCompile>
   </ItemGroup>
@@ -48,10 +51,13 @@
     <ClInclude Include="Scene.h">
       <Filter>Engine</Filter>
     </ClInclude>
-    <ClInclude Include="DummyEntity.h">
+    <ClInclude Include="Ship.h">
       <Filter>Sample</Filter>
     </ClInclude>
     <ClInclude Include="SampleScene.h">
+      <Filter>Sample</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
       <Filter>Sample</Filter>
     </ClInclude>
   </ItemGroup>

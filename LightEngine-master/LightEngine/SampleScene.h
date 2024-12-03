@@ -1,18 +1,22 @@
 #pragma once
 
 #include "Scene.h"
+#include <SFML/System/Clock.hpp>
 
-class DummyEntity;
+class Ship;
+class Enemy;
 
 class SampleScene : public Scene
 {
-	DummyEntity* pEntity1;
-	DummyEntity* pEntity2;
+	Ship* pEntity1;
+	Enemy* pEntity2;
 
-	DummyEntity* pEntitySelected;
+	std::vector<Enemy*> pEnemies;
+	sf::Clock m_spawnClock;
+	Ship* pEntitySelected;
 
 private:
-	void TrySetSelectedEntity(DummyEntity* pEntity, int x, int y);
+	void TrySetSelectedEntity(Ship* pEntity, int x, int y);
 
 public:
 	void OnInitialize() override;
